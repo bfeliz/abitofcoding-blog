@@ -1,0 +1,21 @@
+<header>
+    {{!-- largescreen navbar and menu --}}
+    <nav id="navbar" class="nav-center nav-extended">
+        <div class="nav-wrapper">
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="hide-on-med-and-down">
+                {{navigation}}
+                {{!-- <li><a href="https://www.instagram.com/abitofcoding/"><i class="fab fa-instagram"></i></a></li> --}}
+            </ul>
+            <br class="break">
+            <a href="{{@site.url}}" class="nav-content ">
+                <p class="title">A Bit of Coding</p>
+            </a>
+            <p class="subtitle">code snippets, tutorials, and programming thoughts</p>
+        </div>
+    </nav>
+    {{!-- sidenav menu --}}
+    <ul class="sidenav" id="mobile-demo">
+        {{navigation}}
+    </ul>
+</header>

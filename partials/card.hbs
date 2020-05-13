@@ -1,19 +1,18 @@
 {{!-- card for showing posts --}}
-<article class="gh-card {{post_class}} {{#if feature_image}}with-image{{else}}no-image{{/if}}">
-    <a class="gh-card-link" href="{{url}}">
+
+<article class="card large hoverable {{post_class}} {{#if feature_image}}with-image{{else}}no-image{{/if}}">
+    <a class="gh-card-link black-text" href="{{url}}">
         {{#if feature_image}}
-        <img class="gh-card-image" srcset="{{img_url feature_image size="s"}} 300w,
-                        {{img_url feature_image size="m"}} 600w,
-                        {{img_url feature_image size="l"}} 1000w,
-                        {{img_url feature_image size="xl"}} 2000w" sizes="(max-width: 1000px) 400px, 700px"
-            src="{{img_url feature_image size="m"}}" alt="{{title}}" />
+        <img class="card-image responsive-img" id="images" src="{{img_url feature_image}}" alt="{{title}}" />
         {{/if}}
-        <div class="gh-card-content">
+        <div class="card-content">
             <span class="gh-card-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
-                <span class="bull">&bull;</span> {{reading_time}}</span>
-            <h2 class="gh-card-title">{{title}}</h2>
-            <p>{{excerpt}}</p>
-            <strong>Read more</strong>
+                <span class="bull ">&bull;</span> {{reading_time}}</span>
+            <h1 class="card-title">{{title}}</h1>
+            <div>
+                <p>{{excerpt}}</p>
+                <strong>Read more</strong>
+            </div>
         </div>
     </a>
 </article>

@@ -1,15 +1,30 @@
 {{!< default}}
 
 <div class="gh-page">
-    <div class="gh-container">
+    <div class="container">
+        <div class="row main-row">
+            {{#get "posts" filter="featured:true" as |featured|}}
+            {{#if featured}}
+            <div class="col s12">
+                {{#foreach featured}}
+                {{> "card"}} {{!-- partials/card.hbs --}}
 
-        <div class="gh-postfeed">
-            {{#foreach posts}}
+                {{/foreach}}
 
-            {{> "card"}} {{!-- partials/card.hbs --}}
+            </div>
+            {{/if}}
+            {{/get}}
+            <div class="gh-postfeed">
+                {{#foreach posts}}
+                {{#unless featured}}
+                <div class="col s12 m6">
 
-            {{/foreach}}
+                    {{> "card"}} {{!-- partials/card.hbs --}}
+                </div>
+                {{/unless}}
+                {{/foreach}}
+            </div>
         </div>
-
+        {{pagination}}
     </div>
 </div>
