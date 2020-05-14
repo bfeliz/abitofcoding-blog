@@ -5,6 +5,26 @@ html {
     font-size: 16px;
     line-height: 1.5;
 }
+#search {
+    position: absolute;
+    right: 0;
+    padding-right: 16px;
+    cursor: pointer;
+}
+#search-area {
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+}
+#search-input {
+    padding: 0px 30px 0px 3px;
+    border-bottom: transparent;
+    cursor: pointer;
+}
+#search-input:focus {
+    border-bottom: 1px solid #ff1b7a;
+    box-shadow: 0 1px 0 0 #ff1b7a;
+}
 #navbar {
     background-color: #fbfffd;
     box-shadow: none;
@@ -23,23 +43,30 @@ nav.nav-center ul li a {
     display: inline-block;
     color: #ff1b7a;
 }
-.title,
+#title,
 .subtitle {
     font-family: "Ubuntu", sans-serif;
     color: #009df8;
     text-align: center;
     margin: 0% 6%;
 }
-.title {
+#title a {
     font-size: 4rem;
+    color: #009df8;
 }
 .subtitle {
-    padding: 1.25%;
+    padding: 0% 1.25%;
     font-size: 2rem;
     line-height: 1.5;
 }
 .material-icons {
     color: #ff1b7a;
+}
+.sidenav {
+    background-color: #fbfffd;
+}
+.sidenav .nav {
+    margin-top: 5%;
 }
 .main-row {
     margin-top: 3%;
@@ -76,5 +103,10 @@ nav.nav-center ul li a {
 @media screen and (max-width: 992px) {
     .break {
         display: block;
+    }
+}
+@media screen and (max-width: 350px) {
+    #search-area {
+        max-width: 200px;
     }
 }
