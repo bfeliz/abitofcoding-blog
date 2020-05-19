@@ -5,26 +5,54 @@ html {
     font-size: 16px;
     line-height: 1.5;
 }
+/* searchbar styling */
 #search {
     position: absolute;
     right: 0;
     padding-right: 16px;
     cursor: pointer;
 }
-#search-area {
+#modal1 {
+    position: absolute;
+    margin-right: 0px;
+    right: 0;
+    width: 375px;
+    height: fit-content;
+    background-color: #fbfffd;
+}
+#modal1[style] {
+    top: 0 !important;
+}
+#content {
+    padding-top: 0%;
+}
+#inner-search {
     position: absolute;
     right: 0;
-    margin-right: 50px;
-}
-#search-input {
-    padding: 0px 30px 0px 3px;
-    border-bottom: transparent;
+    padding-top: 20px;
+    padding-right: 15px;
     cursor: pointer;
 }
-#search-input:focus {
+.input-field {
+    margin: 0;
+}
+#search-bar {
+    top: 0;
+    width: 300px;
+    padding-top: 20px;
+    padding-left: 10px;
+    cursor: pointer;
     border-bottom: 1px solid #ff1b7a;
     box-shadow: 0 1px 0 0 #ff1b7a;
+    margin-bottom: -3%;
+    height: 1.5rem;
 }
+.search-results-item {
+    text-align: left;
+    line-height: 2;
+    color: #009df8;
+}
+/* navbar styling */
 #navbar {
     background-color: #fbfffd;
     box-shadow: none;
@@ -43,6 +71,7 @@ nav.nav-center ul li a {
     display: inline-block;
     color: #ff1b7a;
 }
+/* blog title and subtitle styling */
 #title,
 .subtitle {
     font-family: "Ubuntu", sans-serif;
@@ -59,6 +88,7 @@ nav.nav-center ul li a {
     font-size: 2rem;
     line-height: 1.5;
 }
+/* sidenav styling */
 .material-icons {
     color: #ff1b7a;
 }
@@ -68,9 +98,11 @@ nav.nav-center ul li a {
 .sidenav .nav {
     margin-top: 5%;
 }
+/* main container styling */
 .main-row {
     margin-top: 3%;
 }
+/* post cards styling */
 .card {
     background-color: #fbfffd;
     overflow: hidden;
@@ -87,6 +119,7 @@ nav.nav-center ul li a {
 .card-title {
     margin: 0;
 }
+/* pagination styling */
 .pagination,
 .pagination a {
     background-color: #fbfffd;
@@ -94,19 +127,24 @@ nav.nav-center ul li a {
     text-align: center;
     color: #ff1b7a;
 }
+/* footer styling */
 .page-footer {
     background-color: #009df8;
 }
 #footer-nav ul li a {
     color: white;
 }
+/* special css for smaller screens */
 @media screen and (max-width: 992px) {
     .break {
         display: block;
     }
 }
-@media screen and (max-width: 350px) {
-    #search-area {
-        max-width: 200px;
+@media screen and (max-width: 370px) {
+    #modal1 {
+        width: 275px;
+    }
+    #search-bar {
+        width: 200px;
     }
 }

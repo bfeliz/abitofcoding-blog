@@ -1,6 +1,19 @@
 {{!< default}}
 
 <div class="gh-page">
+    <div id="modal1" class="modal">
+        <div id="content" class="modal-content">
+            <form id="search-area">
+                <div class="row">
+                    <i class="material-icons" id="inner-search">search</i>
+                    <div class="input-field">
+                        <input id="search-bar">
+                    </div>
+                </div>
+            </form>
+            <ul id="search-results"></ul>
+        </div>
+    </div>
     <div class="container">
         <div class="row main-row">
             {{#get "posts" filter="featured:true" as |featured|}}
