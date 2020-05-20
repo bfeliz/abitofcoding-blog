@@ -42,18 +42,21 @@
 
                 <footer class="gh-footer gh-canvas">
 
-                    {{!-- <div class="gh-post-authors">
-                        Written by {{#foreach authors}}<a href="{{url}}">{{name}}</a>{{/foreach}}
-                        <span class="gh-post-meta"><time
-                                datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
-                            <span class="bull">&bull;</span> {{reading_time}}</span>
-                    </div> --}}
 
-                    {{!--
-        <section class="gh-post-comments">
-            If you want to embed comments, this is a good place to do it!
-        </section>
-        --}}
+                    {{!-- comment code for disqus comments --}}
+                    <div id="disqus_thread"></div>
+                    <script>
+                        var disqus_config = function () {
+                            this.page.url = "{{url absolute="true"}}";
+                            this.page.identifier = "ghost-{{comment_id}}"
+                        };
+                        (function () {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://https-abitofcoding-com.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
 
                 </footer>
 
