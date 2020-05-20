@@ -2,8 +2,11 @@ html {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     background-color: #fbfffd;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
+}
+body {
+    font-size: 16px;
 }
 /* searchbar styling */
 #search {
@@ -68,6 +71,7 @@ nav.nav-center ul li {
     float: none;
 }
 nav.nav-center ul li a {
+    font-size: 18px;
     display: inline-block;
     color: #ff1b7a;
 }
@@ -98,6 +102,9 @@ nav.nav-center ul li a {
 .sidenav .nav {
     margin-top: 5%;
 }
+.sidenav .nav li a {
+    font-size: 16px;
+}
 /* main container styling */
 .main-row {
     margin-top: 3%;
@@ -127,8 +134,23 @@ nav.nav-center ul li a {
     text-align: center;
     color: #ff1b7a;
 }
+/* individual posts styling */
+.post-full-tags {
+    margin-top: 50px;
+}
+.post-full-tags a:hover {
+    text-decoration: underline;
+}
+.gh-post-authors {
+    margin-bottom: 30px;
+}
+.gh-canvas h1 {
+    font-size: 50px;
+    margin-top: 20px;
+}
 /* footer styling */
 .page-footer {
+    font-size: 16px;
     background-color: #009df8;
 }
 #footer-nav ul li a {
@@ -144,7 +166,8 @@ nav.nav-center ul li a {
     #modal1 {
         width: 275px;
     }
-    #search-bar {
+    #search-bar,
+    .sidenav {
         width: 200px;
     }
 }
