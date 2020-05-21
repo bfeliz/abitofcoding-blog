@@ -1,0 +1,36 @@
+{{!< default}}
+
+<section class="error">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+
+                <section class="error-content">
+
+                    <h1 class="error-code">{{statusCode}}</h1>
+                    <p class="error-description">{{message}}</p>
+                    <p class="error-link"><a href="{{@site.url}}">Go to the front page →</a></p>
+
+                    {{#if errorDetails}}
+                    <section class="error-stack">
+                        <h4>Errors:</h4>
+                        <ul class="error-stack-list">
+                            {{#foreach errorDetails}}
+                            <li>
+                                <h5 class="error-stack-function">{{{rule}}}</h5>
+
+                                {{#foreach failures}}
+                                <span class="error-stack-file"><strong>Ref:</strong> {{ref}}</span><br>
+                                <span class="error-stack-file"><strong>Message:</strong> {{message}}</span>
+                                {{/foreach}}
+                            </li>
+                            {{/foreach}}
+                        </ul>
+                    </section>
+                    {{/if}}
+
+                </section>
+            </div>
+        </div>
+    </div>
+</section>

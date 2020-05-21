@@ -1,13 +1,13 @@
 {{!-- card for showing posts --}}
 
 <article class="card large hoverable {{post_class}} {{#if feature_image}}with-image{{else}}no-image{{/if}}">
-    <a class="gh-card-link black-text" href="{{url}}">
+    <a class="black-text" href="{{url}}">
         {{#if feature_image}}
         <img class="card-image responsive-img" id="images" src="{{img_url feature_image}}" alt="{{title}}" />
         {{/if}}
         <div class="card-content">
-            <span class="gh-card-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
-                <span class="bull ">&bull;</span> {{reading_time}}</span>
+            <span><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
+                <span>&bull;</span> {{reading_time}}</span>
             <h1 class="card-title">{{title}}</h1>
             <div>
                 <p>{{excerpt}}</p>

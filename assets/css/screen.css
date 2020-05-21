@@ -141,12 +141,16 @@ nav.nav-center ul li a {
 .post-full-tags a:hover {
     text-decoration: underline;
 }
-.gh-post-authors {
+.post-authors {
     margin-bottom: 30px;
 }
-.gh-canvas h1 {
+.canvas h1 {
     font-size: 50px;
     margin-top: 20px;
+}
+/* error page styling */
+.error-content {
+    text-align: center;
 }
 /* footer styling */
 .page-footer {
