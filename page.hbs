@@ -1,0 +1,33 @@
+{{!< default}}
+
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            {{#post}}
+
+            <article class="article {{post_class}}">
+
+                <header class="canvas">
+
+                    <h1>{{title}}</h1>
+
+                    {{#if custom_excerpt}}
+                    <p class="flow-text">{{custom_excerpt}}</p>
+                    {{/if}}
+
+                    {{#if feature_image}}
+                    <img class="responsive-img" src="{{feature_image}}" alt="{{title}}" />
+                    {{/if}}
+
+                </header>
+
+                <div class="canvas flow-text">
+                    {{content}}
+                </div>
+
+            </article>
+        </div>
+    </div>
+</div>
+
+{{/post}}
