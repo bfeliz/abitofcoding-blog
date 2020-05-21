@@ -148,6 +148,11 @@ nav.nav-center ul li a {
     font-size: 50px;
     margin-top: 20px;
 }
+/* tag search posts styling */
+.tag-head h1 {
+    font-size: 50px;
+    margin-top: 20px;
+}
 /* error page styling */
 .error-content {
     text-align: center;

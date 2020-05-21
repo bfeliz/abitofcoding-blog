@@ -1,0 +1,37 @@
+{{!< default}}
+
+<div class="container">
+    <div class="row main-row">
+        <div class="col s12">
+
+            {{#tag}}
+            <header class="tag-head">
+
+                <h1>{{name}}</h1>
+
+                <p>
+                    {{#if description}}
+                    {{description}}
+                    {{else}}
+                    A collection of {{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}
+                    {{/if}}
+                </p>
+
+                {{#if feature_image}}
+                <img src="{{feature_image}}" alt="{{name}}" />
+                {{/if}}
+
+            </header>
+            {{/tag}}
+
+            <div>
+                {{#foreach posts}}
+                <div class="col s12 m6">
+
+                    {{> "card"}} {{!-- partials/card.hbs --}}
+                </div>
+                {{/foreach}}
+            </div>
+        </div>
+    </div>
+</div>
