@@ -1,33 +1,26 @@
 {{!< default}}
 
 <div class="container">
+    {{#is "home"}}
+    {{#get "posts" filter="featured:true" limit="1" as |featured|}}
+    {{#foreach featured}}
     <div class="row main-row">
         <div class="col s12">
-            {{#get "posts" filter="featured:true" as |featured|}}
-            {{#is "home"}}
-            {{#if featured}}
-            <div class="col s12">
-                {{#foreach featured}}
-                {{> "card"}} {{!-- partials/card.hbs --}}
-
-                {{/foreach}}
-
-            </div>
-            {{/if}}
-            {{/is}}
-            {{/get}}
-            <div>
-                {{#foreach posts}}
-                {{#unless featured}}
-                <div class="col s12 m6">
-
-                    {{> "card"}} {{!-- partials/card.hbs --}}
-                </div>
-                {{/unless}}
-                {{/foreach}}
-            </div>
+            {{> "card"}} {{!-- partials/card.hbs --}}
         </div>
     </div>
+    {{/foreach}}
+    {{/get}}
+    {{/is}}
+
+    <section class="row main-row">
+        {{#foreach posts}}
+        <div class="col s12 m6">
+
+            {{> "card"}} {{!-- partials/card.hbs --}}
+        </div>
+        {{/foreach}}
+    </section>
     <div>
         {{pagination}}
     </div>

@@ -5,11 +5,11 @@
         {{#if feature_image}}
         <img class="card-image responsive-img" id="images" src="{{img_url feature_image}}" alt="{{title}}" />
         {{/if}}
-        <div class="card-content">
+        <div id="card-content" class="card-content">
             <span><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
                 <span>&bull;</span> {{reading_time}}</span>
             <h1 class="card-title">{{title}}</h1>
-            <div>
+            <div id="excerpt">
                 <p>{{excerpt}}</p>
                 <strong>Read more</strong>
             </div>
