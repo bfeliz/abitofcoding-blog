@@ -171,6 +171,37 @@ nav.nav-center ul li a {
     .formkit-submit {
     margin: 0 10px 10px;
 }
+/* required for Ghost functionality */
+.kg-width-wide {
+    max-width: 1040px;
+}
+.kg-width-full {
+    max-width: 100vw;
+}
+.kg-gallery-container {
+    max-width: 1040px;
+    width: 100vw;
+}
+.kg-gallery-row {
+    justify-content: center;
+}
+.kg-gallery-image {
+    width: 100%;
+    height: 100%;
+}
+.kg-bookmark-card,
+.kg-bookmark-container,
+.kg-bookmark-content,
+.kg-bookmark-title,
+.kg-bookmark-description,
+.kg-bookmark-thumbnail,
+.kg-bookmark-metadata,
+.kg-bookmark-icon,
+.kg-bookmark-author,
+.kg-bookmark-publisher {
+    width: 100%;
+}
+
 /* tag search posts styling */
 .tag-head h1 {
     font-size: 50px;
