@@ -147,6 +147,30 @@ nav.nav-center ul li a {
     font-size: 50px;
     margin-top: 20px;
 }
+.formkit-form[data-uid="9d60fc43ad"]
+    .formkit-fields
+    .formkit-field
+    .formkit-input {
+    padding: 0 0 0 7px;
+}
+.canvas
+    .formkit-form[data-uid="9d60fc43ad"][min-width~="700"]
+    .formkit-fields[data-stacked="false"]
+    .formkit-field,
+.canvas
+    .formkit-form[data-uid="9d60fc43ad"][min-width~="800"]
+    .formkit-fields[data-stacked="false"]
+    .formkit-field,
+.canvas
+    .formkit-form[data-uid="9d60fc43ad"][min-width~="700"]
+    .formkit-fields[data-stacked="false"]
+    .formkit-submit,
+.canvas
+    .formkit-form[data-uid="9d60fc43ad"][min-width~="800"]
+    .formkit-fields[data-stacked="false"]
+    .formkit-submit {
+    margin: 0 10px 10px;
+}
 /* tag search posts styling */
 .tag-head h1 {
     font-size: 50px;
