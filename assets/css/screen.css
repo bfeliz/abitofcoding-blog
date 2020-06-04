@@ -1,12 +1,12 @@
 html {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    background-color: #fbfffd;
+    background-color: white;
     font-size: 14px;
     line-height: 1.5;
 }
 body {
-    font-size: 16px;
+    font-size: 18px;
 }
 /* searchbar styling */
 #search {
@@ -21,7 +21,7 @@ body {
     right: 0;
     width: 375px;
     height: fit-content;
-    background-color: #fbfffd;
+    background-color: white;
 }
 #modal1[style] {
     top: 0 !important;
@@ -53,11 +53,11 @@ body {
 .search-results-item {
     text-align: left;
     line-height: 2;
-    color: #009df8;
+    color: #008dde;
 }
 /* navbar styling */
 #navbar {
-    background-color: #fbfffd;
+    background-color: white;
     box-shadow: none;
 }
 .break {
@@ -79,13 +79,14 @@ nav.nav-center ul li a {
 #title,
 .subtitle {
     font-family: "Ubuntu", sans-serif;
-    color: #009df8;
+    color: #008dde;
+    /* color: #009df8; */
     text-align: center;
     margin: 0% 6%;
 }
 #title a {
     font-size: 4rem;
-    color: #009df8;
+    color: #008dde;
 }
 .subtitle {
     padding: 0% 1.25%;
@@ -97,7 +98,7 @@ nav.nav-center ul li a {
     color: #ff1b7a;
 }
 .sidenav {
-    background-color: #fbfffd;
+    background-color: white;
 }
 .sidenav .nav {
     margin-top: 5%;
@@ -111,7 +112,7 @@ nav.nav-center ul li a {
 }
 /* post cards styling */
 .card {
-    background-color: #fbfffd;
+    background-color: white;
     overflow: hidden;
 }
 .card-image {
@@ -128,7 +129,7 @@ nav.nav-center ul li a {
 /* pagination styling */
 .pagination,
 .pagination a {
-    background-color: #fbfffd;
+    background-color: white;
     box-shadow: none;
     text-align: center;
     color: #ff1b7a;
@@ -147,6 +148,7 @@ nav.nav-center ul li a {
     font-size: 50px;
     margin-top: 20px;
 }
+
 .formkit-form[data-uid="9d60fc43ad"]
     .formkit-fields
     .formkit-field
@@ -170,6 +172,27 @@ nav.nav-center ul li a {
     .formkit-fields[data-stacked="false"]
     .formkit-submit {
     margin: 0 10px 10px;
+}
+
+/* tag search posts styling */
+.tag-head h1 {
+    font-size: 50px;
+    margin-top: 20px;
+}
+/* error page styling */
+.error-content {
+    text-align: center;
+}
+/* footer styling */
+.page-footer {
+    font-size: 18px;
+    background-color: #008dde;
+}
+.instagram {
+    padding: 0 2%;
+}
+#footer-nav ul li a {
+    color: white;
 }
 /* required for Ghost functionality */
 .kg-width-wide {
@@ -200,27 +223,6 @@ nav.nav-center ul li a {
 .kg-bookmark-author,
 .kg-bookmark-publisher {
     width: 100%;
-}
-
-/* tag search posts styling */
-.tag-head h1 {
-    font-size: 50px;
-    margin-top: 20px;
-}
-/* error page styling */
-.error-content {
-    text-align: center;
-}
-/* footer styling */
-.page-footer {
-    font-size: 16px;
-    background-color: #009df8;
-}
-.instagram {
-    padding: 0 2%;
-}
-#footer-nav ul li a {
-    color: white;
 }
 /* special css for smaller screens */
 @media screen and (max-width: 992px) {
