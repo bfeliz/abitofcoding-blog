@@ -1,14 +1,11 @@
 $(document).ready(function () {
-    const search = $("#search-area");
-    const searchResults = $("#search-input");
     const searchBar = $("#search-bar");
     const searchItems = $("#search-results");
+    const images = $(".kg-image");
+
+    images.addClass("responsive-img");
 
     $(".sidenav").sidenav();
-
-    search.on("submit", function () {
-        console.log(searchResults.val());
-    });
 
     $(".modal").modal({
         onOpenEnd: function () {
