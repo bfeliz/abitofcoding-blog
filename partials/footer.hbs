@@ -1,9 +1,9 @@
 <footer class="page-footer">
     <div class="container">
         <div class="row">
-            <div class="col l6 s12">
+            <div class="col s12">
                 <a href="{{@site.url}}">
-                    <h5 class="white-text">A Bit of Coding</h5>
+                    <h3 class="white-text">A Bit of Coding</h3>
                 </a>
                 <p class="grey-text text-lighten-4">code snippets, tutorials, and programming thoughts</p>
                 <div class="social">
@@ -14,14 +14,17 @@
                     <a class="white-text" href="mailto:admin@abitofcoding.com?subject=Mail from A Bit of Coding"
                         title="email"><i class="far fa-envelope"></i></a>
                 </div>
+                <div id="footer-nav">
+                    {{navigation}}
+                </div>
             </div>
-            <div class="col l4 offset-l2 s12" id="footer-nav">
+            {{!-- <div class="col l4 offset-l2 s12" id="footer-nav">
                 <h5 class="white-text">Links</h5>
                 {{navigation}}
-            </div>
+            </div> --}}
         </div>
     </div>
-    <div class="footer-copyright">
+    <div class="footer-copyright" id="footer">
         <div class="container">
             © 2020 Brittany Fortner
         </div>
