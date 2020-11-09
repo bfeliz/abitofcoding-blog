@@ -185,7 +185,7 @@ pre {
     outline: none;
 }
 .is-active-link::before {
-    background-color: #3eb0ef;
+    background-color: none;
 }
 
 /* tag search posts styling */
