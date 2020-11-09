@@ -184,6 +184,9 @@ pre {
 .post-content h3 {
     outline: none;
 }
+.is-active-link::before {
+    background-color: #3eb0ef;
+}
 
 /* tag search posts styling */
 .tag-head h1 {
