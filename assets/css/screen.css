@@ -192,6 +192,11 @@ pre {
 }
 a.toc-link {
     height: 0;
+    color: #039be5;
+}
+
+a.toc-link:hover {
+    text-decoration: underline;
 }
 
 /* tag search posts styling */
