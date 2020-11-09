@@ -180,6 +180,10 @@ pre {
     .formkit-submit {
     margin: 0 10px 10px;
 }
+.post-content h2,
+.post-content h3 {
+    outline: none;
+}
 
 /* tag search posts styling */
 .tag-head h1 {
