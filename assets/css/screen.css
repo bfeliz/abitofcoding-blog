@@ -187,6 +187,9 @@ pre {
 .is-active-link {
     font-weight: normal;
 }
+a.toc-link {
+    height: 0;
+}
 
 /* tag search posts styling */
 .tag-head h1 {
