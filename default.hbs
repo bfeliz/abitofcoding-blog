@@ -11,6 +11,9 @@
     <script src="https://kit.fontawesome.com/22b4dbd445.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.12.0/tocbot.css"
+        integrity="sha512-2kqK5bWDwdrluTn6Wkj+jgiwyzvAHLirVp08Kz7kN5I8PWQ0tUtEMxfhyWDCrnws91BJ9PfrUy6ImfA7Qb22TA=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" media="screen" />
 
     <title>{{meta_title}}</title>
@@ -47,6 +50,16 @@
 
     {{!-- additional script output --}}
     {{ghost_foot}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.12.0/tocbot.min.js"
+        integrity="sha512-oD3xGN8YTxenx6tdS4D/RKqO4OtORBQtAb2/FseM17GGMIi6jMwKUBc8duX4A5RwMOGGXoFBZrsqbOk8GpXFgQ=="
+        crossorigin="anonymous"></script>
+    <script>
+        tocbot.init({
+            tocSelector: '.toc',
+            contentSelector: '.post-content',
+            hasInnerContainers: true
+        });
+    </script>
 </body>
 
 </html>
