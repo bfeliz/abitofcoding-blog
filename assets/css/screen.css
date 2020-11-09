@@ -184,8 +184,8 @@ pre {
 .post-content h3 {
     outline: none;
 }
-.is-active-link::before {
-    background-color: none;
+.is-active-link {
+    font-weight: normal;
 }
 
 /* tag search posts styling */
