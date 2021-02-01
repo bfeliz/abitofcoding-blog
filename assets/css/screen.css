@@ -112,6 +112,7 @@ nav.nav-center ul li a {
     margin-top: 3%;
 }
 /* post cards styling */
+
 .card {
     background-color: white;
     overflow: hidden;
@@ -121,9 +122,7 @@ nav.nav-center ul li a {
     height: 100%;
     object-fit: cover;
 }
-#card-content {
-    min-height: 400px;
-}
+
 .card-title {
     margin: 0;
 }
@@ -264,6 +263,7 @@ a.toc-link:hover {
 .kg-bookmark-publisher {
     width: 100%;
 }
+
 /* special css for smaller screens */
 @media screen and (max-width: 992px) {
     .break {

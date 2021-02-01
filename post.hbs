@@ -1,6 +1,4 @@
-{{!< default}}
-
-<div class="container">
+{{!< default}} <div class="container">
     <div class="row">
         <div class="col s12">
             {{#post}}
@@ -24,8 +22,8 @@
                     {{/if}}
 
                     <div class="post-authors">
-                        Written by {{#foreach authors}}<a href="{{url}}">{{name}}</a>{{/foreach}}
-                        <span><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
+                        Written by {{#foreach authors}}{{name}}{{/foreach}}
+                        <span><time datetime="{{date format=" YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
                             <span>&bull;</span> {{reading_time}}</span>
                     </div>
 
@@ -67,6 +65,6 @@
             </article>
         </div>
     </div>
-</div>
+    </div>
 
-{{/post}}
+    {{/post}}

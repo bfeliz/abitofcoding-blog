@@ -1,12 +1,10 @@
-{{!< default}}
-
-<div class="container">
+{{!< default}} <div class="container">
     {{#is "home"}}
     {{#get "posts" filter="featured:true" limit="1" as |featured|}}
     {{#foreach featured}}
     <div class="row main-row">
         <div class="col s12">
-            {{> "card"}} {{!-- partials/card.hbs --}}
+            {{> "featured"}} {{!-- partials/featured.hbs --}}
         </div>
     </div>
     {{/foreach}}
@@ -16,7 +14,6 @@
     <section class="row main-row">
         {{#foreach posts}}
         <div class="col s12 m6">
-
             {{> "card"}} {{!-- partials/card.hbs --}}
         </div>
         {{/foreach}}
@@ -24,4 +21,4 @@
     <div>
         {{pagination}}
     </div>
-</div>
+    </div>

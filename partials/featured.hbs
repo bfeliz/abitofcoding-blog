@@ -1,11 +1,9 @@
-{{!-- card for showing posts --}}
-
 <article class="card hoverable {{post_class}} {{#if feature_image}}with-image{{else}}no-image{{/if}}">
     <a class="black-text" href="{{url}}">
         {{#if feature_image}}
         <img class="card-image responsive-img" src="{{img_url feature_image}}" alt="{{title}}" />
         {{/if}}
-        <div class="card-content card-col">
+        <div class="card-content">
             <span><time datetime="{{date format=" YYYY-MM-DD"}}">{{date format="MMM D YYYY"}}</time>
                 <span>&bull;</span> {{reading_time}}</span>
             <h1 class="card-title">{{title}}</h1>
